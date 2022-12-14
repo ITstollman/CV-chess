@@ -237,6 +237,9 @@ def game_loop_human(space_M_BLACK,
         if move in board.legal_moves:
             board.push(move)
         else:
+            #  TODO - to add a perpetual condition
+            #         to add an exception for an invalid typo
+
             print("enter your move again, a2a4 FOR EXAMPLE, notice that the board is opposite. ")
             input_move = input("HUMAN, Enter your move: ")
             move = chess.Move.from_uci(input_move)
@@ -252,6 +255,7 @@ def game_loop_human(space_M_BLACK,
                         "ave time per move": total_time / num_of_moves / 2}
 
             start_time = time.time()
+            #  TODO - wrap with a function due to repeated code in other methods
 
             BLACK_AI_move = ai_move(board, chess.BLACK, 3, space_M_BLACK, capture_M_BLACK, pawn_structure_M_BLACK,
                                     connected_rooks_M_BLACK,
@@ -702,6 +706,7 @@ determines current game phase with respect to number of moves been played
 @:return 0 , 1 , 2 (phases)
 '''
 
+# TODO - to use in more functions
 
 def phase_generator(num_of_moves):
     if count_moves(num_of_moves) < 10:
