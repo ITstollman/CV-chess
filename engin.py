@@ -1083,6 +1083,6 @@ if __name__ == '__main__':
                   random_DNA["num_defending_vs_attacking_M"])
 
     else:
-        print("run program again, you didn't choose a proper number my dear friend")
+        print("frun program again, you didn't choose a proper number my dear friend")
 
 # game_loop()
