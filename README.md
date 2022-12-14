@@ -3,6 +3,9 @@
 > An AI agent you can play with, physically, using computer vision techniques.
 > Live demo [_here_](https://www.example.com). <!-- If you have the project hosted somewhere, include the link here. -->
 
+
+![Alt text](C:\Users\itama\PycharmProjects\CVCai\ReadMe images\human-move-grapgh.png "Optional title")
+
     
 ## Table of Contents  :crystal_ball:	
 * [General Info](#general-information)
