@@ -310,7 +310,6 @@ def canny_edge(img, sigma=0.33):
     lower = int(max(0, (1.0 - sigma) * v))
     upper = int(min(255, (1.0 + sigma) * v))
     edged = cv2.Canny(img, lower, upper)
-    # c_edges = cv2.Canny(img, 190, 200)
     return edged
 
 
