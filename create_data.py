@@ -79,6 +79,8 @@ def manual_sqr_classifier(resized_perspective):
     else:
         train_or_test = 'test'
 
+    #  TODO - insert repeated path to variable
+
     if piece_or_sqr == 49:
         path = f'C:\\Users\\itama\\PycharmProjects\\yael_checker\\{train_or_test}\\{b_or_w}p'
         print(f"{b_or_w}PAWN")
@@ -346,6 +348,8 @@ def hough_line(edges, img):
         exists = False
         if theta < np.pi / 4 or theta > np.pi - np.pi / 4:
             print("v")
+            #  TODO - replace code with 'is_close_line_exists' function
+
             for line in v_lines.values():
                 if math.isclose(line[0][0], x1, abs_tol=50) or \
                         math.isclose(line[1][0], x2, abs_tol=50):
@@ -358,6 +362,8 @@ def hough_line(edges, img):
         else:
             print("h")
             for line in h_lines.values():
+                #  TODO - replace code with 'is_close_line_exists' function
+
                 if math.isclose(line[0][1], y1, abs_tol=50) or \
                         math.isclose(line[1][1], y2, abs_tol=50):
                     exists = True
@@ -635,6 +641,7 @@ determines the side's length of an average square
 @:return gaps_list -> a dictionary that holds the gaps between the [gap_category] edges of the lines [v_or_h_lines]
   e.g -> all_gaps['h_lines_left'] : [ 23, 43, 43] ...
 '''
+#  TODO to add a similar method that finds missing line on the edge of the image.
 
 
 def find_gaps(v_or_h_lines, gap_category):
