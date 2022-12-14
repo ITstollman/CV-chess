@@ -3,7 +3,7 @@
 > An AI agent you can play with, physically, using computer vision technics.
 > Live demo [_here_](https://www.example.com). <!-- If you have the project hosted somewhere, include the link here. -->
 
-
+    
 ## Table of Contents  :crystal_ball:	
 * [General Info](#general-information)
 * [Technologies Used](#technologies-used)
@@ -151,20 +151,21 @@ List the ready features here:
 
 - non-trivial libraries needed:
 
-    import cv2
-    import numpy as np
-    from keras import Model
-    from keras.applications import VGG19
-    from keras.callbacks import EarlyStopping
-    from keras.layers import Flatten, Dense
-    from keras.preprocessing.image import ImageDataGenerator
-    from matplotlib import pyplot as plt
-    from sklearn.metrics import classification_report, accuracy_score, confusion_matrix
+        import cv2
+        import numpy as np
+        from tensorflow import keras
+        from keras import Model
+        from keras.applications import VGG19
+        from keras.callbacks import EarlyStopping
+        from keras.layers import Flatten, Dense
+        from keras.preprocessing.image import ImageDataGenerator
+        from matplotlib import pyplot as plt
+        from sklearn.metrics import classification_report, accuracy_score, confusion_matrix
+        
+        import chess.engine
+        import mediapipe as mp
 
 
-What are the project requirements/dependencies? Where are they listed? A requirements.txt or a Pipfile.lock file perhaps? Where is it located?
-
-Proceed to describe how to install / setup one's local environment / get started with the project.
 
 ## Files :open_file_folder:	
 - create_data.py -> 
@@ -208,7 +209,9 @@ holds the 'Opening theory book' represented by a binary format.
 
 
 ## Project Status :avocado:	
-Project is: _in progress_ / _complete_ / _no longer being worked on_. If you are no longer working on it, provide reasons why.
+Project is _almost finished_ -  _small improvments need to be made for a smooth user expirience,_
+
+_As well as there are some changes that need to made for a cleaner code and better usage of raw materials_
 
 
 ## Room for Improvement  :weight_lifting_man:	
@@ -216,13 +219,31 @@ Include areas you believe need improvement / could be improved. Also add TODOs f
 
 
 
-Room for improvement:
-- Improvement to be done 1
-- Improvement to be done 2
+Room for improvement in Computer Vision part:
 
-To do:
-- Feature to be added 1screen
-- Feature to be added 2 
+- train VGG-19 over more images for better acuracy. 
+
+- train VGG-19 over more chess board and pieces sets. 
+
+- explore larger range of shooting angles.
+
+- increase acuracy of board detection
+
+- add statistical approch to allow a better piece recognition
+
+
+
+Room for improvement in AI agent part:
+
+- code more evaluation functions
+
+- run longer and better GENETIC ALGORYTHM
+ 
+- train GENETIC ALGORYTHM on human players as well as on various AI agents
+
+- use Neural Networks approach
+
+- make the structure faster by using state of the art approaches.
 
 
 
