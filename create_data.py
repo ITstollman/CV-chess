@@ -79,6 +79,7 @@ def manual_sqr_classifier(resized_perspective):
     else:
         train_or_test = 'test'
 
+    #  TODO - insert repeated path to variable
     if piece_or_sqr == 49:
         path = f'C:\\Users\\itama\\PycharmProjects\\yael_checker\\{train_or_test}\\{b_or_w}p'
         print(f"{b_or_w}PAWN")
@@ -346,6 +347,7 @@ def hough_line(edges, img):
         exists = False
         if theta < np.pi / 4 or theta > np.pi - np.pi / 4:
             print("v")
+            #  TODO - replace code with 'is_close_line_exists' function
             for line in v_lines.values():
                 if math.isclose(line[0][0], x1, abs_tol=50) or \
                         math.isclose(line[1][0], x2, abs_tol=50):
@@ -357,6 +359,7 @@ def hough_line(edges, img):
                 v_lines[(r, theta)] = [(x1, y1), (x2, y2)]
         else:
             print("h")
+            #  TODO - replace code with 'is_close_line_exists' function
             for line in h_lines.values():
                 if math.isclose(line[0][1], y1, abs_tol=50) or \
                         math.isclose(line[1][1], y2, abs_tol=50):
@@ -538,7 +541,6 @@ def point_inter(line1, line2):
             print("NO POINT, TOO BIG")
             print('POINT AT-->', point_x, point_y)
 
-
             return np.Infinity, np.Infinity
 
     except:
@@ -567,7 +569,6 @@ def from_xy_to_linear_eq(line):
     n = y1 - (m * x1)
     h_or_v_lines_cartes = [int(x1), int(y1), int(m), int(n)]
     return h_or_v_lines_cartes
-
 
 
 '''
@@ -636,6 +637,7 @@ determines the side's length of an average square
   e.g -> all_gaps['h_lines_left'] : [ 23, 43, 43] ...
 '''
 
+#  TODO to add a similar method that finds missing line on the edge of the image.
 
 def find_gaps(v_or_h_lines, gap_category):
     edge = gap_category[0]
@@ -781,7 +783,6 @@ def find_lines_location_in_gaps(h_or_v, gap, square_length, f_x1, f_y1, f_x2, f_
     return lines_locations
 
 
-
 img = read_img('SHAY_2.jpeg')
 resized = resize_img(img, IMG_SIZE)
 cv2.circle(resized, (int(-200), int(-200)), radius=50, color=(255, 0, 0), thickness=-1)
@@ -829,4 +830,3 @@ else:
 # crop the image a little bit diffrently, for example - higher, righter and so.
 # OBJECT DIDECTION OF THE BOARD ITSELF TO STIFF THE BOUNDRIES USING ->
 # https://www.kaggle.com/datasets/thefamousrat/synthetic-chess-board-images DATASET
-

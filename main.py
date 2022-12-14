@@ -9,6 +9,7 @@ import VGG19_activate
 from create_data import draw_move
 from engin import game_loop_human, get_random_DNA, ai_move, print_board
 
+#  TODO - use table in 'engin.py' file. there is a usage of similar tables as only one table is needed.
 board_notation = {1: 'a1', 2: 'b2', 3: 'c3', 4: 'd4', 5: 'e5', 6: 'f6', 7: 'g7', 8: 'h8',
                   9: 'a2', 10: 'b2', 11: 'c2', 12: 'd2', 13: 'e2', 14: 'f2', 15: 'g2', 16: 'h2',
                   17: 'a3', 18: 'b3', 19: 'c3', 20: 'd3', 21: 'e3', 22: 'f3', 23: 'g3', 24: 'h3',
@@ -17,6 +18,7 @@ board_notation = {1: 'a1', 2: 'b2', 3: 'c3', 4: 'd4', 5: 'e5', 6: 'f6', 7: 'g7',
                   41: 'a6', 42: 'b6', 43: 'c6', 44: 'd6', 45: 'e6', 46: 'f6', 47: 'g6', 48: 'h6',
                   49: 'a7', 50: 'b7', 51: 'c7', 52: 'd7', 53: 'e7', 54: 'f7', 55: 'g7', 56: 'h7',
                   57: 'a8', 58: 'b8', 59: 'c8', 60: 'd8', 61: 'e8', 62: 'f8', 63: 'g8', 64: 'h8'}
+
 
 mpHands = mp.solutions.hands
 hands = mpHands.Hands(
@@ -43,6 +45,8 @@ def hand_move():
         cv2.imshow('frame', frame)
         imgRGB = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
         results = hands.process(imgRGB)
+
+        #  TODO - use the various mpHands capabilities to distinct different hand gestures
 
         if results.multi_hand_landmarks:
             hand1 = True

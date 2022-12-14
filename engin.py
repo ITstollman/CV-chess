@@ -65,6 +65,7 @@ UNICODE_PIECE_SYMBOLS = {
     'K': "♔", "k": "♚",
     'P': "♙", "p": "♟",
 }
+
 pawntable = [
     0, 0, 0, 0, 0, 0, 0, 0,
     5, 10, 10, -20, -20, 10, 10, 5,
@@ -237,46 +238,50 @@ def game_loop_human(space_M_BLACK,
         if move in board.legal_moves:
             board.push(move)
         else:
+            #  TODO - to add a perpetual condition
+            #         to add an exception for an invalid typo
+
             print("enter your move again, a2a4 FOR EXAMPLE, notice that the board is opposite. ")
             input_move = input("HUMAN, Enter your move: ")
             move = chess.Move.from_uci(input_move)
             board.push(move)
 
-        if 1 == 1:
-            if board.is_checkmate():
-                print("GAME OVER - WHITE WON THE GAME")
-                print({"WINNER": chess.BLACK, "num_of_moves": num_of_moves,
-                       "ave time per move": total_time / num_of_moves / 2})
 
-                return {"WINNER": chess.WHITE, "num_of_moves": count_moves(num_of_moves),
-                        "ave time per move": total_time / num_of_moves / 2}
+        if board.is_checkmate():
+            print("GAME OVER - WHITE WON THE GAME")
+            print({"WINNER": chess.BLACK, "num_of_moves": num_of_moves,
+                   "ave time per move": total_time / num_of_moves / 2})
 
-            start_time = time.time()
+            return {"WINNER": chess.WHITE, "num_of_moves": count_moves(num_of_moves),
+                    "ave time per move": total_time / num_of_moves / 2}
 
-            BLACK_AI_move = ai_move(board, chess.BLACK, 3, space_M_BLACK, capture_M_BLACK, pawn_structure_M_BLACK,
-                                    connected_rooks_M_BLACK,
-                                    enemy_king_magnet_M_BLACK, the_defending_bishop_M_BLACK,
-                                    defending_vs_attacking_M_BLACK)
-            end_time = time.time()
-            total_time += end_time - start_time
+        start_time = time.time()
+
+        #  TODO - wrap with a function due to repeated code in other methods
+        BLACK_AI_move = ai_move(board, chess.BLACK, 3, space_M_BLACK, capture_M_BLACK, pawn_structure_M_BLACK,
+                                connected_rooks_M_BLACK,
+                                enemy_king_magnet_M_BLACK, the_defending_bishop_M_BLACK,
+                                defending_vs_attacking_M_BLACK)
+        end_time = time.time()
+        total_time += end_time - start_time
+        print(total_time)
+
+        print("BLACK_AI_move", BLACK_AI_move)
+        board.push(BLACK_AI_move)
+        print("-------------------")
+        print("BLACK AI  played", BLACK_AI_move)
+        print_board(board)
+        num_of_moves = num_of_moves + 1
+        print("---------count_moves----------", count_moves(num_of_moves))
+
+        if board.is_checkmate():
+            print("GAME OVER - BLACK WON THE GAME")
             print(total_time)
+            print({"WINNER": chess.BLACK, "num_of_moves": num_of_moves,
+                   "ave time per move": total_time / num_of_moves / 2})
 
-            print("BLACK_AI_move", BLACK_AI_move)
-            board.push(BLACK_AI_move)
-            print("-------------------")
-            print("BLACK AI  played", BLACK_AI_move)
-            print_board(board)
-            num_of_moves = num_of_moves + 1
-            print("---------count_moves----------", count_moves(num_of_moves))
-
-            if board.is_checkmate():
-                print("GAME OVER - BLACK WON THE GAME")
-                print(total_time)
-                print({"WINNER": chess.BLACK, "num_of_moves": num_of_moves,
-                       "ave time per move": total_time / num_of_moves / 2})
-
-                return {"WINNER": chess.BLACK, "num_of_moves": num_of_moves,
-                        "ave time per move": total_time / num_of_moves / 2}
+            return {"WINNER": chess.BLACK, "num_of_moves": num_of_moves,
+                    "ave time per move": total_time / num_of_moves / 2}
 
 
 '''
@@ -702,7 +707,7 @@ determines current game phase with respect to number of moves been played
 @:return 0 , 1 , 2 (phases)
 '''
 
-
+# TODO - to use in more serious
 def phase_generator(num_of_moves):
     if count_moves(num_of_moves) < 10:
         # opening
