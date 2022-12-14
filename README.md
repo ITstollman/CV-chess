@@ -24,7 +24,7 @@
   It idenifys the board , the 64 squers of it, and the chess pieces structure. 
   
   Second is the AI agent part. That part incharges of generating the moves. 
-  It gets the current position from the Computer Vision part, and detemnis what it believs to be the best move. 
+  It gets the current position from the Computer Vision part, and generates what it believs to be the best move. 
 ------------------------------------------------------------------------
   
   The two parts combined -allow the user to play an AI agent, on a physical board. Thats a combination that one doesnt see regulary, as most AI agents can be played     againts only through a digital board.
