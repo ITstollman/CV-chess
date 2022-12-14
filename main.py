@@ -9,6 +9,7 @@ import VGG19_activate
 from create_data import draw_move
 from engin import game_loop_human, get_random_DNA, ai_move, print_board
 
+x = 3
 board_notation = {1: 'a1', 2: 'b2', 3: 'c3', 4: 'd4', 5: 'e5', 6: 'f6', 7: 'g7', 8: 'h8',
                   9: 'a2', 10: 'b2', 11: 'c2', 12: 'd2', 13: 'e2', 14: 'f2', 15: 'g2', 16: 'h2',
                   17: 'a3', 18: 'b3', 19: 'c3', 20: 'd3', 21: 'e3', 22: 'f3', 23: 'g3', 24: 'h3',
