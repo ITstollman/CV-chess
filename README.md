@@ -4,8 +4,6 @@
 > Live demo [_here_](https://www.example.com). <!-- If you have the project hosted somewhere, include the link here. -->
 
 
-![Alt text](C:\Users\itama\PycharmProjects\CVCai\ReadMe images\human-move-grapgh.png "Optional title")
-
     
 ## Table of Contents  :crystal_ball:	
 * [General Info](#general-information)
@@ -52,6 +50,10 @@
 
 
 ## game process 
+
+![game_loop](https://user-images.githubusercontent.com/102149895/207730953-90153f81-1055-46a7-bfb7-f409e48213d5.png)
+
+
 List the ready features here:
 - Awesome feature 1
 - Awesome feature 2
@@ -127,6 +129,9 @@ List the ready features here:
    :game_die:	-QUIESCENCE SEARCH
    
    :game_die:	-GENETIC ALGORITHM
+   
+![genetic2](https://user-images.githubusercontent.com/102149895/207735548-6ed6ff78-07d0-49ab-a027-57268819dd7f.png)
+
    
    - Opening Theory Book - pre made decision tree for the opening phase. 
    
