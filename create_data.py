@@ -813,9 +813,6 @@ print('v_added_lines', len(v_added_lines), '--', v_added_lines)
 v_lines = add_lines(v_lines, v_added_lines)
 h_lines = add_lines(h_lines, h_added_lines)
 
-print("BBBBBBBBBBB", len(v_lines))
-print("BBBBBBBBBBB", len(h_lines))
-
 if (len(v_lines) == 9) and (len(h_lines) == 9):
     # points = line_intersections(h_lines.keys(), v_lines.keys(), img2)
     points = line_intersections(h_lines.values(), v_lines.values(), img2)
