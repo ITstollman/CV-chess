@@ -8,9 +8,7 @@
 ## Table of Contents  :crystal_ball:	
 * [General Info](#general-information)
 * [Technologies Used](#technologies-used)
-* [Screenshots](#screenshots)
 * [Setup](#setup)
-* [Usage](#usage)
 * [Project Status](#project-status)
 * [Room for Improvement](#room-for-improvement)
 * [Contact](#contact)
@@ -36,7 +34,7 @@
 <!-- You don't have to answer all the questions - just the ones relevant to your project. -->
 
 
-## Tools Used :bulb:	
+## Technologies Used :bulb:	
 -  :eye:	Computer Vision part - 
   
     Python, Open CV, Keras, VGG19 model,  MediaPipe.
@@ -138,13 +136,6 @@
    
    
    
-  
-
-
-## Screenshots :camera_flash:	
-![Example screenshot](C:\Users\itama\PycharmProjects\CVCai\SHAY_2.jpeg)
-<!-- If you have screenshots you'd like to share, include them here. -->
-
 
 ## Setup :hammer_and_wrench:	
 
