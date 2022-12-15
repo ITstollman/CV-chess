@@ -54,11 +54,6 @@
 ![game_loop](https://user-images.githubusercontent.com/102149895/207730953-90153f81-1055-46a7-bfb7-f409e48213d5.png)
 
 
-List the ready features here:
-- Awesome feature 1
-- Awesome feature 2
-- Awesome feature 3
-
 #  - project structure 
 ## Computer Vision part:
   - collect Data from physical board. 
@@ -130,7 +125,7 @@ List the ready features here:
    
    :game_die:	-GENETIC ALGORITHM
    
-![genetic2](https://user-images.githubusercontent.com/102149895/207735548-6ed6ff78-07d0-49ab-a027-57268819dd7f.png)
+![genetic3](https://user-images.githubusercontent.com/102149895/207832374-1f12fa65-f9e1-460c-81f0-5e59821d1a13.png)
 
    
    - Opening Theory Book - pre made decision tree for the opening phase. 
