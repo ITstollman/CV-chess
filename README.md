@@ -15,7 +15,6 @@
 <!-- * [License](#license) -->
 
 ## General Information :desktop_computer:	
-- Provide general information about your project here.
     
   The project has 2 main parts.
   
@@ -24,6 +23,7 @@
   
   Second is the AI agent part. That part is in charge of generating the moves. 
   It gets the current position from the Computer Vision part and generates what it believes to be the best move. 
+  
 ------------------------------------------------------------------------
   
   The two parts combined -allow the user to play an AI agent, on a physical board. That's a combination that one doesn't see regularly, as most AI agents can be played     against only through a digital board.
