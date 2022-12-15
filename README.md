@@ -210,9 +210,7 @@ _As well as there are some changes that need to made for a cleaner code and bett
 
 
 ## Room for Improvement  :weight_lifting_man:	
-Include areas you believe need improvement / could be improved. Also add TODOs for future development.
-
-
+Its important to mention that the project is a prototype, and still have a lot of room for improvement.
 
 Room for improvement in Computer Vision part:
 
