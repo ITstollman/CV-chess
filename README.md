@@ -212,13 +212,14 @@ _As well as there are some changes that need to made for a cleaner code and bett
 ## Room for Improvement  :weight_lifting_man:	
 Its important to mention that the project is a prototype, and still have a lot of room for improvement.
 
+
 Room for improvement in Computer Vision part:
 
 - train VGG-19 over more images for better accuracy. 
 
 - train VGG-19 over more chess boards and pieces sets. 
 
--explore a largerr range of shooting angles.
+- explore a largerr range of shooting angles.
 
 - increase accuracy of board detection
 
