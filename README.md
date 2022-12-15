@@ -210,7 +210,7 @@ _As well as there are some changes that need to made for a cleaner code and bett
 
 
 ## Room for Improvement  :weight_lifting_man:	
-Its important to mention that the project is a prototype, and still have a lot of room for improvement.
+_Its important to mention that the project is a prototype, and still have a lot of room for improvement._
 
 
 Room for improvement in Computer Vision part:
