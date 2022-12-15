@@ -115,15 +115,16 @@
    
    - AI algorithms- using the evaluation functions and determining the best move. depth 3.
    
-   :game_die:	-MINIMAX
+   :game_die:	-MINIMAX [wikipedia](https://en.wikipedia.org/wiki/Minimax)
    
-   :game_die:	-ALPHA BETA PRUNING
+   :game_die:	-ALPHA BETA PRUNING [wikipedia](https://en.wikipedia.org/wiki/Alpha%E2%80%93beta_pruning)
    
-   :game_die:	-QUIESCENCE SEARCH
+   :game_die:	-QUIESCENCE SEARCH [wikipedia](https://en.wikipedia.org/wiki/Quiescence_search)
    
-   :game_die:	-GENETIC ALGORITHM
+   :game_die:	-GENETIC ALGORITHM [wikipedia](https://en.wikipedia.org/wiki/Genetic_algorithm)
    
-![genetic3](https://user-images.githubusercontent.com/102149895/207832374-1f12fa65-f9e1-460c-81f0-5e59821d1a13.png)
+![gene4](https://user-images.githubusercontent.com/102149895/207835621-033e29ae-ecde-46c1-a478-5c898c8e011c.png)
+
 
    
    - Opening Theory Book - pre made decision tree for the opening phase. 
