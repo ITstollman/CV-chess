@@ -52,6 +52,12 @@
 ![game_loop](https://user-images.githubusercontent.com/102149895/207730953-90153f81-1055-46a7-bfb7-f409e48213d5.png)
 
 
+![full](https://user-images.githubusercontent.com/102149895/208295991-6196c75d-f0d7-46d3-9732-951b9f63221f.png)
+
+
+
+
+
 #  - project structure 
 ## Computer Vision part:
   - collect Data from physical board. 
