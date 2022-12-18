@@ -82,7 +82,7 @@
   
    - train VGG19 model. 
    
-   :toolbox:	-use the data collected in the previous phase to train, the last layer of a VGG19 model. 
+   :toolbox:	-use the data collected in the previous phase to train, an additional last layer of a VGG19 model. 
    
    :toolbox:	-validate and test VGG19. 
    
