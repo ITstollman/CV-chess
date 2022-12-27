@@ -1,6 +1,6 @@
 # AI PHYSICAL CHESS :chess_pawn: :eye:	
 
-> An AI agent you can play with, physically, using computer vision techniques.
+> An AI agent you can play with, physically, using computer vision techniques. STILL IN PROGRESS
 > Live demo [_here_](https://www.example.com). <!-- If you have the project hosted somewhere, include the link here. -->
 
 
